@@ -1,4 +1,4 @@
-const SOAP_URL = "http://isapi.icu-tech.com/icutech-test.dll/soap/IICUTech";
+const SOAP_URL = "https://isapi.icu-tech.com/icutech-test.dll/soap/IICUTech";
 
 function login(event) {
   // Get username and password
