@@ -5,6 +5,7 @@
     <meta name="author" content="Yared" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>A Simple Login Page</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -17,7 +18,7 @@
   <body class="login-page">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="logo" width="120" height="80" />
+        <img src="img/logo.png" alt="logo" width="100" height="75" />
       </a>
       <button
         class="navbar-toggler"
@@ -52,12 +53,12 @@
             <div class="card fat">
               <div class="card-body">
                 <h4 class="card-title">Login</h4>
-                <form method="POST" novalidate="">
+                <form id="form" novalidate="" onsubmit="login(event);return false">
                   <div class="form-group">
                     <label for="username">Username</label>
                     <input
                       id="username"
-                      type="text"
+                      type="email"
                       class="form-control"
                       name="username"
                       value=""
@@ -84,6 +85,7 @@
                     <button type="submit" class="btn btn-primary btn-block">
                       Submit
                     </button>
+                    <label id="message" class="mt-2"></label>
                   </div>
                 </form>
               </div>
