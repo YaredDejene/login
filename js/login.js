@@ -64,7 +64,8 @@ function login(event) {
   };
 
   // Send the SOAP request
-  xmlHttp.setRequestHeader("Content-Type", "text/xml");
+  // xmlHttp.setRequestHeader("Content-Type", "text/xml");
+  // xmlHttp.setRequestHeader("Content-Type", "*");
   xmlHttp.send(soapRequest);
 }
 
